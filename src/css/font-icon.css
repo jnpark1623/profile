@@ -1,0 +1,100 @@
+/*======================== Font CDN =====================*/
+
+/*  Gothic A1 font - 한글 : 'Gothic A1' */
+/* @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');   */
+
+/*  Noto Sans KR font - 한글 : 'Noto Sans KR' */
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap'); */
+
+/*  나눔고딕 - 한글 : 'Nanum Gothic' / 400,700 */
+/* @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); */
+
+/*  나눔바른고딕 - 한글 : 'NanumBarunGothic' / 200,300,400,700 */
+/* @import url("https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@1.0/nanumbarungothicsubset.css"); */
+
+/* Spoqa Han Sans - 한글 : 'Spoqa Han Sans' */
+/* @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css); */
+/* @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css); */
+
+/* IBM Plex Sans KR - 한글 */
+/* @font-face { font-family: 'IBMPlexSansKR-Text'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Text.woff') format('woff'); font-weight: normal; font-style: normal; } */
+
+/* NEXON Lv1 Gothic - 한글 */
+/* @font-face { font-family: 'NEXON Lv1 Gothic OTF'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff'); font-weight: normal; font-style: normal; } */
+
+/* 인피니티산스 Regular - 한글*/
+/* @font-face { font-family: 'InfinitySans-RegularA1'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff'); font-weight: normal; font-style: normal; } */
+
+/* 카페24 심플해 - 한글 */
+/* @font-face { font-family: 'Cafe24Simplehae'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Simplehae.woff') format('woff'); font-weight: normal; font-style: normal; } */
+
+/* 유토이미지고딕 R - 한글 */
+/* @font-face { font-family: 'BBTreeGR'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGR.woff') format('woff'); font-weight: normal; font-style: normal; } */
+
+/* 아리따돋움 - 한글 */
+/* @font-face { font-family: 'Arita-dotum-Medium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff') format('woff'); font-weight: normal; font-style: normal; } */
+
+/* 이롭게바탕체 - 한글 : 'Iropke Batang' -- index.html 에 link 태그로 삽입해야함 */
+/* <link rel="stylesheet" href="//cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css">    */
+
+/* Spoqa Han Sans Neo - 한글 : 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP', sans-serif; */
+/* 설명 및 다운로드: https://spoqa.github.io/spoqa-han-sans/ko-KR/ */
+/* 웹폰트로 사용하기 설명(경량화): https://spoqa.github.io/2017/02/15/using-shs-as-webfonts.html */
+/* 폰트 저장된 깃허브(웹용 폰트 다운가능) :  https://github.com/spoqa/spoqa-han-sans */
+
+/* 웹 폰트를 로컬 스토리지에 저장하는 기법 - 캐시 안정성 증가, 글꼴 깜빡임 현상 제거 : https://mytory.net/2016/06/15/webfont-best-practice.html */
+
+/* @import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css'); */
+
+/* @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
+
+/* 굵기(font-weight : thin: 100, light: 300, regular: 400, medium: 500, bold: 700 */
+
+/* 화살표를 폰트로 사용하기 - 왼쪽 화살표(<) : &#xE000;  오른쪽 화살표(>) : &#xE001;  */
+/* 눈사람 기호  -  U+2603 , &#x2603; */
+
+@charset "utf-8";
+
+@font-face{
+  font-family:'SpoqaHanSansNeo';
+  font-weight: 700;
+	src:url('./font/SpoqaHanSansNeo-Bold.eot');
+	src:url('./font/SpoqaHanSansNeo-Bold.eot?#iefix') format('embedded-opentype'),
+	url('./font/SpoqaHanSansNeo-Bold.woff') format('woff'),
+	url('./font/SpoqaHanSansNeo-Bold.ttf') format('truetype');
+}
+@font-face{
+    font-family:'SpoqaHanSansNeo';
+    font-weight: 400;
+        src:url('./font/SpoqaHanSansNeo-Regular.eot');
+        src:url('./font/SpoqaHanSansNeo-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./font/SpoqaHanSansNeo-Regular.woff') format('woff'),
+        url('./font/SpoqaHanSansNeo-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SpoqaHanSansNeo';
+  font-weight: 500;
+  src: url('./font/SpoqaHanSansNeo-Medium.eot');
+  src: url('./font/SpoqaHanSansNeo-Medium.eot?#iefix') format('embedded-opentype'),
+    url('./font/SpoqaHanSansNeo-Medium.woff') format('woff'),
+    url('./font/SpoqaHanSansNeo-Medium.ttf') format('truetype');
+}
+@font-face{
+  font-family:'SpoqaHanSansNeo';
+  font-weight: 300;
+	src:url('./font/SpoqaHanSansNeo-Light.eot');
+	src:url('./font/SpoqaHanSansNeo-Light.eot?#iefix') format('embedded-opentype'),
+	url('./font/SpoqaHanSansNeo-Light.woff') format('woff'),
+	url('./font/SpoqaHanSansNeo-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SpoqaHanSansNeo';
+  font-weight: 100;
+  src: url('./font/SpoqaHanSansNeo-Thin.eot');
+  src: url('./font/SpoqaHanSansNeo-Thin.eot?#iefix') format('embedded-opentype'),
+    url('./font/SpoqaHanSansNeo-Thin.woff') format('woff'),
+    url('./font/SpoqaHanSansNeo-Thin.ttf') format('truetype');
+}
+
+* { font-family: 'SpoqaHanSansNeo', sans-serif; } 
+/* 영문폰트 함께 적용 시 영문폰트를 맨앞에 배치해야 함 */

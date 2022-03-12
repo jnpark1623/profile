@@ -1,9 +1,11 @@
 .App {
   text-align: center;
+  font-family: Consolas; font-size: 24px; font-style: normal; font-variant: normal;
 }
 
 .App-logo {
   height: 40vmin;
+  width: 40vmin;
   pointer-events: none;
 }
 
@@ -13,17 +15,35 @@
   }
 }
 
+.Yrotate {
+  height: 40vmin;
+  width: 40vmin;
+  pointer-events: none;
+  animation: App-logo-Yspin infinite 5s linear;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: left;
+  align-items: left;
+  justify-content: left;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
+.Content {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: left;
+  align-items: left;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  font-family: Consolas;
+  color: white;
+}
 .App-link {
   color: #61dafb;
 }
@@ -34,5 +54,14 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes App-logo-Yspin {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(360deg);
   }
 }

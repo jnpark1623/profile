@@ -1,0 +1,112 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.5rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+  }
+
+  .main-content {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-primary);
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10rem;
+    min-width: 128rem;
+    background-color: var(--clr-light-cyan);
+    z-index: 5;
+    transition: all 0.3s;
+  } /* 전체 영역       */
+  header.change {
+    height: 7rem;
+  } /* 스크롤 시 높이 줄여줌  */
+  header.container {
+    height: 7rem;
+    padding: 0 2rem;
+    background-color: transparent;
+    border-bottom: 0.1rem solid var(--clr-light-cyan);
+  } /* 요소들만 있는 영역 */
+
+  .main-logo img {
+    width: 4rem;
+    margin-right: 0.5rem;
+  } 
+  .main-logo h1 {
+    display: inline-block;
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--clr-primary);
+    padding-top: 0.2rem;
+  } 
+  .main-logo h1.long {
+    display: none;
+  } 
+
+  /* ----------------------  1280px 이하 ( Desktop )  ------------------------- */
+@media screen and (max-width: 1280px) {
+    /* --- 사이트 제품명 설정 --- */
+    .main-logo h1.small {
+      display: none;
+    } /* wide 용 제품명 숨김 */
+    .main-logo h1.long {
+      display: inline-block;
+    } /* desktop 용 제품명 보임 */
+  }
+
+
+/* header banner */
+#typing {
+  
+    width: 0ch;
+    color: black;
+    float: left;
+    font-family: sans-serif;
+    font-weight:bold;
+    font-size: 50px;
+    margin-top: 20%;
+    margin-left: 20%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1s steps(5) 0.2s infinite alternate;
+}
+#typing span{
+color:rgb(79, 255, 35);}
+
+#crow {
+    float: left;
+    margin-top: 20%;
+color: rgb(79, 255, 35);
+    font-family: consolas;
+    font-weight:bold;
+    font-size: 50px;
+    animation: crow 0.5s linear 0s infinite;
+}
+@keyframes typing {
+    from {
+        width: 0ch;
+    }
+    to {
+        width: 15ch;
+    }
+}
+@keyframes crow {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
