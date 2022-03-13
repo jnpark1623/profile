@@ -55,6 +55,11 @@
 
 @charset "utf-8";
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./font/OpenSans-ExtraBold.ttf') format('truetype');
+}
+
 @font-face{
   font-family:'SpoqaHanSansNeo';
   font-weight: 700;

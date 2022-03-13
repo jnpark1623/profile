@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+
+.banner_body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    background-color: #251C2D;
+    overflow: visible;
+  }
+.banner_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.banner_container h1,
+.banner_container h2 {
+  text-transform: uppercase;
+  font-family: "Anton", sans-serif;
+  color: white;
+  text-align: left;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner_container h1 {
+  font-size: 10vw;
+  margin: 0;
+  line-height: 3.1;
+  height: 20vw;
+}
+
+.banner_container h2 {
+  font-size: 7vw;
+  letter-spacing: 0.4vw;
+}
+
+.char-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.char {
+  display: inline-block;
+  position: relative;
+  height: 20vw;
+}
+
+.char--clone {
+  position: absolute;
+  top: 60vw;
+  left: 0;
+}
+
+.char::before,
+.char::after {
+  content: attr(data-char);
+  position: absolute;
+  left: 0;
+  height: 20vw;
+}
+
+.char::before {
+  top: -100%;
+}
+
+.char::after {
+  bottom: -100%;
+}
+
+.dg.a.main {
+  margin-right: 0;
+}

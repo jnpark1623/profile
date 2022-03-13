@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   font-family: Consolas; font-size: 24px; font-style: normal; font-variant: normal;
+  background-color: #251C2D;
 }
 
 .App-logo {
@@ -23,7 +24,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #251C2D;
   min-height: 100vh;
   display: flex;
   flex-direction: left;
@@ -34,7 +35,7 @@
 }
 
 .Content {
-  background-color: #282c34;
+  background-color: #251C2D;
   min-height: 100vh;
   display: flex;
   flex-direction: left;
