@@ -1,21 +1,39 @@
 {
   "files": {
-    "main.css": "/static/css/main.b14d2533.css",
-    "main.js": "/static/js/main.8bcb74ef.js",
+    "main.css": "/static/css/main.822499a9.css",
+    "main.js": "/static/js/main.da3d62ca.js",
     "static/js/787.9077b1c8.chunk.js": "/static/js/787.9077b1c8.chunk.js",
+    "static/media/SpoqaHanSansNeo-Thin.ttf": "/static/media/SpoqaHanSansNeo-Thin.b8666c6d2d1d929509a1.ttf",
+    "static/media/SpoqaHanSansNeo-Light.ttf": "/static/media/SpoqaHanSansNeo-Light.008270707379c4b4bc51.ttf",
+    "static/media/SpoqaHanSansNeo-Regular.ttf": "/static/media/SpoqaHanSansNeo-Regular.b935041cbcc86b551721.ttf",
+    "static/media/SpoqaHanSansNeo-Medium.ttf": "/static/media/SpoqaHanSansNeo-Medium.cf5c6ddcaec3f59a13c7.ttf",
+    "static/media/SpoqaHanSansNeo-Bold.ttf": "/static/media/SpoqaHanSansNeo-Bold.9a610369db9d3c28b99f.ttf",
     "static/media/myimgp.jpg": "/static/media/myimgp.caa271b1ca72e7215d05.jpg",
+    "static/media/SpoqaHanSansNeo-Light.woff": "/static/media/SpoqaHanSansNeo-Light.1cb73b3acae88adbdd59.woff",
+    "static/media/SpoqaHanSansNeo-Light.eot": "/static/media/SpoqaHanSansNeo-Light.341aef6c15c9c5afdc09.eot",
+    "static/media/SpoqaHanSansNeo-Bold.eot": "/static/media/SpoqaHanSansNeo-Bold.07401071f91a6483c1fa.eot",
+    "static/media/SpoqaHanSansNeo-Bold.woff": "/static/media/SpoqaHanSansNeo-Bold.dc75532918fd412e27a3.woff",
+    "static/media/SpoqaHanSansNeo-Regular.eot": "/static/media/SpoqaHanSansNeo-Regular.4320485bbcd34cf66efe.eot",
+    "static/media/SpoqaHanSansNeo-Medium.eot": "/static/media/SpoqaHanSansNeo-Medium.ac8905f98cfa1166aef1.eot",
+    "static/media/SpoqaHanSansNeo-Regular.woff": "/static/media/SpoqaHanSansNeo-Regular.4af655e2b88a518cc85c.woff",
+    "static/media/SpoqaHanSansNeo-Medium.woff": "/static/media/SpoqaHanSansNeo-Medium.823120084c9ac260b260.woff",
+    "static/media/SpoqaHanSansNeo-Thin.woff": "/static/media/SpoqaHanSansNeo-Thin.a6efdcf0d2b696673851.woff",
+    "static/media/SpoqaHanSansNeo-Thin.eot": "/static/media/SpoqaHanSansNeo-Thin.7201673168d4e195a368.eot",
+    "static/media/Anton-Regular.ttf": "/static/media/Anton-Regular.170b842f9a8cd6150a0d.ttf",
+    "static/media/OpenSans-ExtraBold.ttf": "/static/media/OpenSans-ExtraBold.312244ca5ea57843f749.ttf",
+    "static/media/language.svg": "/static/media/language.f7ce0e59e794335ef71d035d79dced63.svg",
     "static/media/njslogo.svg": "/static/media/njslogo.dd47e26ed1d7dddf018e5cbffc40f76d.svg",
     "static/media/cslogo.svg": "/static/media/cslogo.72d6dcc144316c8b0604497b10071d70.svg",
     "static/media/awards.svg": "/static/media/awards.0716426616c5851007ae31e3a04f5ea6.svg",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/profile.svg": "/static/media/profile.871c58802b9568039786d1e8cf7e8876.svg",
     "index.html": "/index.html",
-    "main.b14d2533.css.map": "/static/css/main.b14d2533.css.map",
-    "main.8bcb74ef.js.map": "/static/js/main.8bcb74ef.js.map",
+    "main.822499a9.css.map": "/static/css/main.822499a9.css.map",
+    "main.da3d62ca.js.map": "/static/js/main.da3d62ca.js.map",
     "787.9077b1c8.chunk.js.map": "/static/js/787.9077b1c8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b14d2533.css",
-    "static/js/main.8bcb74ef.js"
+    "static/css/main.822499a9.css",
+    "static/js/main.da3d62ca.js"
   ]
 }
