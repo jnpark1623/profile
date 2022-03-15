@@ -1,3 +1,5 @@
+@import url("color.css");
+
   .main-header {
     position: fixed;
     display: flex;
@@ -41,6 +43,7 @@
     padding: 15rem 5rem;
     align-items: flex-start;
     background-color: #251C2D;
+    font-family: 'SpoqaHanSansNeo', sans-serif;
   }
 
   header {
@@ -55,6 +58,7 @@
     background-color: #251C2D;
     z-index: 5;
     transition: all 0.3s;
+    font-family: 'SpoqaHanSansNeo', sans-serif;
   } /* 전체 영역       */
   header.change {
     height: 7rem;
@@ -72,21 +76,16 @@
     font-size: 0.7rem;
     top: 2.2rem;
     font-weight: 500;
-    font-family: sans-serif;
     color: grey;
+    width: 100rem;
   }
   
-  .main-logo img {
-    width: 3.5rem;
-    margin-right: 1.5rem;
-    vertical-align: top;
-  } 
   .main-logo h1 {
     display: inline-block;
     vertical-align: text-top;
     font-size: 1.5rem;
-    font-weight: 500;
-    font-family: sans-serif;
+    font-weight: 300;
+    font-family: 'SpoqaHanSansNeo', sans-serif;
     color: white;
   } 
   .main-logo h1.long {
@@ -101,14 +100,47 @@
     font-size: 1.4rem;
 
   }
+
   .profileimg{
     border-radius: 50%;
     margin-top: 1rem;
-    background-color: yellow;
   }
+
   .icon_menu{
+    display: inline-block;
+    position: relative;
     margin-right: 4rem;
+    margin-top: 2rem;
+    background-color: white;
+    -webkit-mask: url('../asset/profile.svg') no-repeat center;
+    mask: url('../asset/profile.svg') no-repeat center;
+    width: 3rem;
+    height: 3rem;
   }
+  .icon_menu.active{
+    background-color: greenyellow;
+  }
+  .icon_menu:hover
+  {
+    background-color: greenyellow;
+  }
+
+  .icon_language{
+    display: inline-block;
+    position: relative;
+    margin-right: 4rem;
+    background-color: white;
+    -webkit-mask: url('../asset/language.svg') no-repeat center;
+    mask: url('../asset/language.svg') no-repeat center;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .icon_language:hover
+  {
+    background-color: greenyellow;
+  }
+
   header .util-menu ul {
     display: inline-block;
     justify-content: right;
@@ -141,6 +173,200 @@
     width: 3rem;
     height: 3rem;
   } /* 영역설정 */
+
+  
+  /* ======================================  메인 메뉴  ========================================= */
+
+.main-menu {
+  flex: 1;
+  text-align: right;
+  padding-right: 3rem;
+} /* 메인 메뉴 위치 설정 */
+.main-menu ul li {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  cursor: pointer; 
+} /* 모두 한줄로 */
+.main-menu ul > li > a {
+  /* 1 Depth Text */
+  display: inline-block;
+  text-align: center;
+  font-size: 1.4rem;
+  height: auto;
+  border-radius: 2rem; /* min-width: 7rem; */
+  transition: all 0.2s ease;
+  padding: 1rem 1rem 0.8rem 1rem;
+  color: var(--clr-text);
+}
+.main-menu ul > li.active {
+  position: relative;
+  margin: 0;
+} /* 활성화 메뉴의 우측 마진 제거 */
+.main-menu ul > li.active::before {
+  /* 1 Depth Active 시 상단 막대 바 */
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 2rem;
+  height: 0.4rem;
+  top: -0.6rem;
+  left: 1.2rem !important;
+  background-color: var(--clr-point);
+  opacity: 1; /* transform: translateX(-50%); */
+}
+.main-menu ul > li.active > a,
+.main-menu ul > li.active > a:hover {
+  color: var(--clr-point);
+  pointer-events: none;
+  font-weight: 500;
+} /* 1 Depth Active */
+
+.main-menu ul > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  top: 4rem;
+} /* 1 depth 메뉴에 마우스 올리면 하위 메뉴 영역 올라오면서 나타남 */
+
+.main-menu ul ul {
+  /* 2 Depth 영역 */
+  position: absolute;
+  display: inline-block;
+  top: 4.5rem;
+  left: 0;
+  padding: 0;
+  transition: all 0.2s ease;
+  background-color: var(--clr-white);
+  min-width: 15rem; /* 최소 너비 */
+  border-top: 0.2rem solid var(--clr-point); /* 2 Depth 영역 상단 라인 */
+  border-radius: 0 0 0 0; /* 하단 둥근 모서리  */
+  opacity: 0;
+  visibility: hidden; /* 처음에 투명하게 숨김 */
+}
+.main-menu > ul > li > ul::before {
+  /* 삼각 돗  */
+  content: "";
+  position: absolute;
+  left: 10%;
+  top: -1rem;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-bottom: 0.4rem solid var(--clr-point);
+  border-top: 0.4rem solid transparent;
+  border-right: 0.4rem solid transparent;
+  border-left: 0.4rem solid transparent;
+}
+.main-menu ul ul li {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: inline-block;
+  border-bottom: 0.1rem solid var(--clr-shadow);
+} /* 2, 3 Depth 메뉴 가로 너비 및 하단 구분 라인 */
+.main-menu ul ul li:last-child {
+  border-bottom: none;
+} /* 마지막 하단 구분라인 제거 */
+/* 2, 3 Depth 메뉴 텍스트  */
+.main-menu ul ul li a {
+  display: inline-block;
+  line-height: 1.2;
+  width: 100%;
+  text-align: left;
+  border-radius: 0;
+  color: var(--clr-text);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.main-menu ul ul > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  top: 0;
+} /* 2 depth 메뉴에 마우스 올리면 하위 메뉴 영역 올라오면서 나타남 */
+.main-menu .icon-arrow-right {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+} /* > 화살표 아이콘 위치 설정 */
+.main-menu ul ul li > a:hover {
+  color: var(--clr-white);
+  border-radius: 0;
+  background-color: var(--clr-point);
+} /* 2, 3 Depth 메뉴 마우스 오버 */
+.main-menu ul ul li > a.active {
+  color: var(--clr-white);
+  border-radius: 0;
+  background-color: var(--clr-point);
+} /* 2, 3 Depth 메뉴 active */
+.main-menu ul ul > li:last-child > a:hover {
+  border-radius: 0 0 0rem 0;
+  color: var(--clr-white);
+  cursor: pointer; 
+} /* 2, 3 depth 마지막 메뉴에 마우스 오버 시 하단 모서리 라운드  */
+/* 3 Depth 영역 상단 라인 제거, 위치 설정 - transform: translateX(100%); */
+.main-menu ul ul ul {
+  position: absolute;
+  min-width: 6rem;
+  top: 2rem;
+  left: 100%;
+  border-top: none;
+}
+.main-menu ul ul ul li a {
+  display: inline-block;
+  width: 100%;
+  white-space: normal;
+} /* 3 Depth 텍스트 줄바꿈 가능 */
+
+/* ------- 2 Depth 메뉴 너비 개별 설정 -------- */
+.main-menu > ul > li:nth-child(2) > ul {
+  width: 14rem !important;
+}
+.main-menu > ul > li:nth-child(3) > ul {
+  width: 11.5rem !important;
+}
+.main-menu > ul > li:nth-child(4) > ul {
+  width: 10rem !important;
+}
+/* ------- 3 Depth 메뉴 너비 개별 설정 -------- */
+.main-menu > ul > li:nth-child(2) > ul > li > ul {
+  width: 11rem;
+}
+.main-menu > ul > li:nth-child(4) > ul > li > ul {
+  width: 9rem;
+} 
+.main-menu > ul > li:nth-child(6) > ul > li:nth-child(2) > ul {
+  width: 9rem !important;
+} 
+.main-menu > ul > li:nth-child(6) > ul > li:nth-child(4) > ul {
+  width: 11rem !important;
+} 
+.main-menu > ul > li:nth-child(6) > ul > li:nth-child(5) > ul {
+  width: 13rem !important;
+} 
+
+
+  /*-------------------------- 화살표 ----------------------------*/
+.icon-arrow-right, .icon-arrow-left, .icon-arrow-down, .icon-arrow-up  /* > 화살표 (기본) - &#xE001;  */ {
+  display: inline-block;
+  
+  font-size: 0.5rem;
+  font-weight: 500;
+  padding: 0 0.5rem;
+}
+.icon-arrow-left {
+  transform: rotateY(180deg);
+} /*  < 화살표 - 좌측  */
+.icon-arrow-down {
+  transform: rotateZ(90deg);
+  font-family: 'SpoqaHanSansNeo' sans-serif;
+  color: white;
+} /*  V 화살표 - 다운 */
+.icon-arrow-up {
+  transform: rotateZ(-90deg);
+} /*  A 화살표 - 업  */
+
   /* ----------------------  1280px 이하 ( Desktop )  ------------------------- */
 @media screen and (max-width: 1280px) {
     /* --- 타이틀 설정 --- */
@@ -162,7 +388,6 @@
     width: 0ch;
     color: black;
     float: left;
-    font-family: sans-serif;
     font-weight:bold;
     font-size: 50px;
     margin-top: 20%;
@@ -178,7 +403,6 @@ color:rgb(79, 255, 35);}
     float: left;
     margin-top: 20%;
 color: rgb(79, 255, 35);
-    font-family: consolas;
     font-weight:bold;
     font-size: 50px;
     animation: crow 0.5s linear 0s infinite;

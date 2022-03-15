@@ -9,22 +9,26 @@ import { useTranslation } from 'react-i18next';
 function Profile (props) {
     const { t } = useTranslation();
     return(
-    <div class="main-content">
+    <div className="main-content">
 
-      <div class="card">
-        <div class="card-body">
-          <div class="d-flex flex-column align-items-center text-center">
-            <img src={myimgp} alt="Admin" class="myimgp" width="250"/>
-            <div class="mt-3">
+      <div className="card">
+        <div className="card-body">
+          <div className="d-flex flex-column align-items-center text-center">
+            <img src={myimgp} alt="Admin" className="myimgp" width="250"/>
+            <div className="mt-3">
               <h4 className='myname'>{t('myname')}</h4>
-              <p class="text-secondary mb-1 myp">{t('myage')}</p>
-              <p class="text-secondary mb-1 myp">{t('job')}</p>
-              <p class="text-secondary mb-1 myp">{t('mydesc')}</p>
+              <p className="text-secondary mb-1 myp">{t('myage')}</p>
+              <p className="text-secondary mb-1 myp">{t('job')}</p>
+              <a href='https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-entp' target="_blank" rel="noopener noreferrer">
+
+                <p className="text-secondary mb-1 myp">{t('mbti')}</p>
+              </a>
+              <p className="text-secondary mb-1 myp">{t('mydesc')}</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="contents">
+      <div className="contents">
         <h1>{t('about')}</h1>
         <h2>{t('introduce')}</h2>
         <h3>{t('introduce1')}</h3>
@@ -52,7 +56,8 @@ function Profile (props) {
         <h3>{t('awards3')}</h3>
         <h3>{t('awards4')}</h3>
         <h3>{t('awards5')}</h3>
-        <h3>{t('awards6')}</h3>
+        <h2>{t('contact')}</h2>
+        <h3>{t('contact1')}</h3>
       </div>
     </div>
     );

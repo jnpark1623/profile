@@ -1,8 +1,10 @@
 
+import '../css/style.css'
 import '../css/banner.css'
 import "splitting/dist/splitting.css";
 import "splitting/dist/splitting-cells.css";
 import Splitting from "splitting/dist/splitting.min.js";
+import { Route, NavLink } from 'react-router-dom';
 import React, { Component, useEffect, useState, useCallback } from 'react';
 
 import { gsap } from "gsap";
@@ -86,10 +88,12 @@ function Banner () {
         setCN("");
       },[]);
     return (
-        <div class="banner_container">
+        <div className="banner_container">
             <hgroup>
-                <h1 className={cn}>jnpark</h1>
-                <h2>CAN NOT SEE THE WOOD FOR THE TREES</h2>
+                <NavLink to="/profile">
+                  <h1 className={cn}>jnpark</h1>
+                </NavLink>
+                <h2>SEE THE FOREST FOR THE TREES</h2>
             </hgroup>
         </div>
     )
