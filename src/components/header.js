@@ -1,43 +1,23 @@
 
 import '../css/style.css';
 import React, { Component, useEffect, useState, useCallback } from 'react';
-import { Route, NavLink } from 'react-router-dom';
+import { Route, NavLink, useLocation } from 'react-router-dom';
 import icon_profile from '../asset/profile.svg'
 import icon_awards from '../asset/awards.svg'
+import icon_language from '../asset/language.svg'
 import myimg from '../asset/myimg.jpg';
 import TechAnimation from '../animations/techAnimation'
 import { useTranslation } from 'react-i18next';
 
 const Header = () => {
-    const { t } = useTranslation();
-    const [isShrunk, setShrunk] = useState(false);
-  
+    const { t, i18n } = useTranslation();
+    const location = useLocation();
+    const [language, setLanguage] = useState("ko-kr");
+
     useEffect(() => {
-      const handler = () => {
-        setShrunk((isShrunk) => {
-          if (
-            !isShrunk &&
-            (document.body.scrollTop > 20 ||
-              document.documentElement.scrollTop > 20)
-          ) {
-            return true;
-          }
-  
-          if (
-            isShrunk &&
-            document.body.scrollTop < 4 &&
-            document.documentElement.scrollTop < 4
-          ) {
-            return false;
-          }
-  
-          return isShrunk;
-        });
-      };
-  
-      // Previous logic.
-    }, []);
-  
+      i18n.changeLanguage(language);
+    }, [language]);
+
     return (
       <div>
             <header className="main-header">
@@ -64,17 +44,28 @@ const Header = () => {
                 </div>
                 
                 {/* <!--메인 메뉴 영역 -->*/} 
-                <nav class="util-menu">
+                <nav className="main-menu">
                   <ul>
                       <li>
-                          <NavLink to="/profile">
-                            <img className="icon_menu" src={icon_profile}></img>
-                          </NavLink>
-                          {/* <NavLink to="/awards">
-                            <img className="icon_menu" src={icon_awards}></img>
-                          </NavLink> */}
+                          <div className="icon_language" ></div>
+                          <ul>
+                            <li>
+                              <a onClick={() => setLanguage("ko-kr")} className={language =="ko-kr" ? "active" : ""}>
+                                {t('ko-kr')}
+                              </a>
+                              <a onClick={() => setLanguage("en-us")} className={language =="en-us" ? "active" : ""}>
+                                {t('en-us')}
+                              </a>
+                            </li>
+                          </ul>
                       </li>
-                    </ul>
+                      <li className={location.pathname =="/profile" ? "active" : ""}>
+                        <NavLink to="/profile">
+                          <div className={location.pathname =="/profile" ? "icon_menu active" : "icon_menu"}></div>
+                        </NavLink>
+                      </li>
+                        
+                  </ul>
                 </nav>
             </header >
       </div>

@@ -9,9 +9,7 @@ import './css/style.css';
 function App() {
   return (
     
-    <div>
-      
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
       
       <Header />
         <Routes>
@@ -22,7 +20,6 @@ function App() {
         </Routes>
 
       </BrowserRouter>
-    </div>
   );
 }
 

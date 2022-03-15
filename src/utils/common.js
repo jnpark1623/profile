@@ -20,4 +20,8 @@ export function useInterval(callback, delay) {
       };
     }, [callback, delay]);
   }
+
+  export const setLanguage = (language) => {
+    language && sessionStorage.setItem('mnp_language', language);
+  }
   

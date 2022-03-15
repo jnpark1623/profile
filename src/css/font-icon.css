@@ -56,6 +56,10 @@
 @charset "utf-8";
 
 @font-face {
+  font-family: 'Anton';
+  src: url('./font/Anton-Regular.ttf') format('truetype');
+}
+@font-face {
   font-family: 'Open Sans';
   src: url('./font/OpenSans-ExtraBold.ttf') format('truetype');
 }
@@ -100,6 +104,6 @@
     url('./font/SpoqaHanSansNeo-Thin.woff') format('woff'),
     url('./font/SpoqaHanSansNeo-Thin.ttf') format('truetype');
 }
-
-* { font-family: 'SpoqaHanSansNeo', sans-serif; } 
+/* 
+* { font-family: 'SpoqaHanSansNeo', sans-serif; }  */
 /* 영문폰트 함께 적용 시 영문폰트를 맨앞에 배치해야 함 */
